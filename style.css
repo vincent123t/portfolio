@@ -15,6 +15,7 @@ html {
 }
 
 body {
+  color: black;
   background: white;
   font-family: baseFont, Arial, sans-serif;
 }
@@ -242,6 +243,14 @@ header {
   transition: 0.2s;
 }
 
+.card a:link {
+  color: black;
+}
+
+.card a:visited {
+  color: black;
+}
+
 .card:hover {
   box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.4);
 }
@@ -337,6 +346,7 @@ button[type="submit"] {
   padding: 6px 0 4px;
   font-family: baseFont;
   font-size: 1em;
+  border: none;
 }
 
 button[type="submit"]:hover {
@@ -443,6 +453,11 @@ button[type="submit"]:hover {
   align-items: center;
   column-gap: 20px;
   margin-bottom: 20px;
+  color: gray;
+}
+
+#foot-social a:link {
+  color: gray;
 }
 
 #foot-social a:visited {
