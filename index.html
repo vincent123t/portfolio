@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio dev web</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/f72452d496.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <header>
+
+    <nav id="navbar">
+      <div id="logo">
+        <a href="#">CREATIVE DEV WEB</a>
+      </div>
+      <div id="menu" class="">
+        <a href="javascript:void(0)" class="icon" onclick="dropdownMenu()"><i class="fa-solid fa-bars"></i></a>
+        <div id="sous-menu" class="">
+          <a href="#about" class="menu-item">A PROPOS</a>
+          <a href="#portfolio" class="menu-item">PORTFOLIO</a>
+          <a href="#contact" class="menu-item">CONTACT</a>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <section id="who">
+
+      <div id="info">
+        <div id="avatar">
+          <img id="photo" src="assets/images/vtavatar4.jpg" alt="photo de vincent">
+        </div>
+        <div id="name">Vincent Thiblet</div>
+        <div id="job">Développeur Web</div>
+        <div id="buttons">
+          <a class="dl-cv" id="dlcv" href="assets/docs/cv.pdf" download>Télécharger CV</a>
+          <a class="dl-cv" href="#contact">Contactez-moi</a>
+        </div>
+        <div id="social">
+          <a href="https://www.linkedin.com/in/vincent-thiblet-80b411246/">
+            <i class="fa-brands fa-lg fa-linkedin-in"></i>
+          </a>
+          <a href="https://twitter.com/home">
+            <i class="fa-brands fa-lg fa-twitter"></i></i>
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="about">
+
+      <div id="story">
+        <h2>A propos</h2>
+        <p>
+          Bonjour ! Je suis Vincent Thiblet, développeur web.
+        </p>
+        <p>
+          Après une formation OpenClassrooms de 'Développeur web', je continue de me former sur différents outils
+          frontend et backend afin d'élargir le champ de mes compétences et devenir un développeur fullstack.
+        </p>
+      </div>
+
+      <div id="basic">
+        <h2>Informations</h2>
+        <div id="data">
+          <div id="data-col1">
+            <div>Email :</div>
+            <div>Téléphone :</div>
+            <div>Adresse :</div>
+            <div>Langues :</div>
+          </div>
+          <div id="data-col2">
+            <div>voir CV</div>
+            <div>voir CV</div>
+            <div>Paris, France</div>
+            <div>Français, Anglais</div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="skills">
+
+      <h2>Compétences professionnelles</h2>
+      <div id="skills-bloc">
+        <div class="skills-cols">
+          <div>HTML</div>
+          <div>CSS, SASS</div>
+          <div>JAVASCRIPT</div>
+          <div>REACT</div>
+          <div>REDUX</div>
+        </div>
+        <div class="skills-cols">
+          <div>NODE.JS</div>
+          <div>EXPRESS</div>
+          <div>MYSQL</div>
+          <div>MONGODB</div>
+          <div>GIT</div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="portfolio">
+
+      <h2>Portfolio</h2>
+      <div id="portfolio-bloc">
+
+        <div class="card">
+          <a href="">
+            <figure class="card-fig">
+              <img class="card-img" src="assets/images/rezov1.png" alt="projet reseau social">
+              <figcaption>
+                <div class="card-title">Réseau social - projet formation</div>
+                <div class="card-real">Réalisé avec :</div>
+                <div class="card-tech">React, Node.js, Express, MySQL</div>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="">
+            <figure>
+              <img class="card-img" src="assets/images/projet0.jpg" alt="reseau social v2">
+              <figcaption>
+                <div class="card-title">Réseau social v2.0</div>
+                <div class="card-real">Réalisé avec :</div>
+                <div class="card-tech">React, Node.js, Express, MySQL</div>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="">
+            <figure>
+              <img class="card-img" src="assets/images/projet0.jpg" alt="movies database">
+              <figcaption>
+                <div class="card-title">Movies database</div>
+                <div class="card-real">Réalisé avec :</div>
+                <div class="card-tech">React, third-party API</div>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="">
+            <figure>
+              <img class="card-img" src="assets/images/projet0.jpg" alt="site de news">
+              <figcaption>
+                <div class="card-title">Site de news</div>
+                <div class="card-real">Réalisé avec :</div>
+                <div class="card-tech">React, Node.js, Express, MongoDB</div>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="contact">
+
+      <div id="form-container">
+        <h2>Contactez-moi</h2>
+        <form id="contact-form" action="">
+          <input type="text" name="email" id="email" placeholder="Votre adresse mail">
+          <div id="err-mail"></div>
+          <input type="text" name="subject" id="subject" placeholder="Objet">
+          <div id="err-subject"></div>
+          <textarea name="message" id="message" placeholder="Ecrivez votre message"></textarea>
+          <div id="err-message"></div>
+          <button type="submit">Envoyer</button>
+          <div id="send-success"></div>
+        </form>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <div id="foot-bloc">
+      <div id="foot-social">
+        <a href="https://www.linkedin.com/in/vincent-thiblet-80b411246/">
+          <i class="fa-brands fa-xl fa-linkedin-in"></i>
+        </a>
+        <a href="https://twitter.com/home">
+          <i class="fa-brands fa-xl fa-twitter"></i></i>
+        </a>
+      </div>
+      <div>Vincent Thiblet</div>
+      <div>&#169 Creative Dev Web - All rights reserved</div>
+    </div>
+
+  </footer>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("d6lG83HEWBCp9FmsK");
+    })();
+  </script>
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
